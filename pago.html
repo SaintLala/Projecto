@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles de Pago</title>
+    <link rel="stylesheet" href="css/pago.css"> <!-- Asegúrate de que esta ruta sea correcta -->
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Delicias<span>.</span></a>
+    </header>
+    <section class="pago">
+        <h1>¡Estás a punto de finalizar tu compra!</h1>
+        <div class="payment-info">
+            <div class="payment-details">
+                <div class="cip">
+                    <h2>Código de pago (CIP):</h2>
+                    <p id="cip-code"></p>
+                </div>
+                <div class="amount">
+                    <h2>Monto a pagar:</h2>
+                    <p>S/. <span id="amount"></span></p>
+                </div>
+                <p>Págalo antes del <span id="deadline"></span></p>
+            </div>
+            <div class="qr-code-container">
+                <h3>Escanea el QR y págalo desde tu billetera favorita</h3>
+                <div class="qr-code">
+                    <img id="qr-code" src="images/QR-paho.jpg" alt="Código QR de Pago"> <!-- Ruta de la imagen QR -->
+                </div>
+                <div class="img-pagos-container">
+                    <img class="img-pagos" src="images/img-pagos.jpg" alt="Medios de Pago"> <!-- Asegúrate de que esta ruta sea correcta -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const cipCode = urlParams.get('cip');
+            const amount = urlParams.get('amount');
+            const deadline = urlParams.get('deadline');
+
+            document.getElementById('cip-code').textContent = cipCode;
+            document.getElementById('amount').textContent = amount;
+            document.getElementById('deadline').textContent = deadline;
+        });
+    </script>
+</body>
+</html>
+

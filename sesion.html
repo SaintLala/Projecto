@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Formulario de Registro e Inicio de Sesión</title>
+    <link rel="stylesheet" href="sesion/estilos.css">
+</head>
+<body>
+    <div class="container-form register">
+        <div class="informacion">
+            <div class="info-sesion">
+                <h2>Bienvenido</h2>
+                <p>Para unirte a nuestra comunidad por favor Inicia Sesión con tus datos</p>
+                <input type="button" value="Iniciar Sesión" id="sign-in">
+            </div>
+        </div>
+        <div class="form-informacion">
+            <div class="form-information-sesion">
+                <h2>Crear una Cuenta</h2>
+                <div class="icons">
+                    <i class='bx bxl-google'></i>
+                </div>
+                <p>o usa tu email para registrarte</p>
+                <form class="form form-register" action="registro.php" method="post">
+                    <div>
+                        <label>
+                            <i class='bx bx-user'></i>
+                            <input type="text" placeholder="Nombre Usuario" name="userName" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <i class='bx bx-envelope'></i>
+                            <input type="email" placeholder="Correo Electronico" name="userEmail" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <i class='bx bx-lock-alt'></i>
+                            <input type="password" placeholder="Contraseña" name="userPassword" required>
+                        </label>
+                    </div>
+                    <input type="submit" value="Registrate">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-form login hide">
+        <div class="informacion">
+            <div class="info-sesion">
+                <h2>Bienvenido</h2>
+                <p>Para unirte a nuestra comunidad por favor Inicia Sesión con tus datos</p>
+                <input type="button" value="Registrarse" id="sign-up">
+            </div>
+        </div>
+        <div class="form-informacion">
+            <div class="form-information-login">
+                <h2>Iniciar Sesión</h2>
+                <div class="icons">
+                    <i class='bx bxl-google'></i>
+                </div>
+                <p>o iniciar sesión con una cuenta</p>
+                <form class="form form-login" action="iniciosesion.php" method="post">
+                    <div>
+                        <label>
+                            <i class='bx bx-envelope'></i>
+                            <input type="email" placeholder="Correo Electronico" name="userEmail" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <i class='bx bx-lock-alt'></i>
+                            <input type="password" placeholder="Contraseña" name="userPassword" required>
+                        </label>
+                    </div>
+                    <input type="submit" value="Iniciar Sesion">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="sesion/sesion.js"></script>
+</body>
+</html>
+

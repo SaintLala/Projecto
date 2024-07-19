@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/carrito.css">
+</head>
+<body>
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="index.html" class="logo">Delicias<span>.</span></a>
+        <nav class="navbar">
+            <a href="index.html#inicio">inicio</a>
+            <a href="index.html#nosotros">nosotros</a>
+            <a href="index.html#productos">productos</a>
+            <a href="index.html#reseñas">reseñas</a>
+            <a href="index.html#contactanos">contactanos</a>
+        </nav>
+
+        <div class="icons"> 
+            <a href="libro.html" class="fa-solid fa-book"></a>           
+            <a href="carrito.html" class="fas fa-shopping-cart">
+                <span id="cart-counter">0</span>
+            </a>
+            <a href="sesion.html" class="fas fa-user"></a>
+        </div>
+
+    </header>
+
+
+    <section class="carrito">
+        <div class="container">
+            <h1 class="heading"> Tu <span>Carrito</span> </h1>
+            <div class="cart-container">
+                <div class="cart-items"></div>
+                <div class="cart-total">
+                    <h3>Total: <span class="total-price">s/0.00</span></h3>
+                    <button class="btn confirm-btn">Confirmar Compra</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/cart.js"></script>
+</body>
+</html>

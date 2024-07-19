@@ -1,0 +1,174 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f0f0f0, #e0e0e0); /* Fondo degradado */
+    margin: 0;
+    padding: 0;
+}
+
+h1.heading {
+    text-align: center;
+    color: #333;
+    margin: 2rem 0;
+}
+
+.InfoProducto {
+    padding: 4rem 2rem; /* Aumentamos el padding para más espacio alrededor del contenido */
+    background-color: #f9f9f9; /* Fondo para la sección de información del producto */
+}
+
+.InfoProducto .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.InfoProducto .container {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Aumentamos el tamaño de la sombra */
+    max-width: 1200px;
+    width: 100%; /* Aseguramos que el contenedor ocupe todo el ancho disponible */
+    margin: 0 auto; /* Centramos el contenedor horizontalmente */
+    padding: 2rem;
+    box-sizing: border-box; /* Incluimos el padding en el ancho total */
+}
+
+.InfoProducto .container .images {
+    flex: 1 1 50%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.InfoProducto .container .images img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px; /* Añadimos borde redondeado a la imagen */
+}
+
+.InfoProducto .container .content {
+    flex: 1 1 50%;
+    padding: 2rem;
+}
+
+.InfoProducto .container .content h3 {
+    font-size: 2.5rem;
+    color: #090707;
+    margin-bottom: 1rem;
+}
+
+.InfoProducto .container .content h3 span {
+    color: #e91e63; /* Usar un tono rosa */
+}
+
+.InfoProducto .container .content p {
+    font-size: 1.25rem;
+    color: #666;
+    padding: 0.5rem 0;
+    line-height: 1.5;
+}
+
+.selector-cantidad {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.btn-cantidad {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.btn-cantidad:hover {
+    background-color: #ddd;
+}
+
+#cantidad {
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+    font-size: 1.25rem;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    color: #fff;
+    background-color: #e91e63; /* Usar un tono rosa */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background-color: #c2185b; /* Un tono más oscuro de rosa */
+}
+
+/* Estilos adicionales para pantallas pequeñas */
+@media (max-width: 768px) {
+    .InfoProducto .container {
+        flex-direction: column;
+    }
+
+    .InfoProducto .container .images, .InfoProducto .container .content {
+        flex: 1 1 100%;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+.precio {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.precio-etiqueta {
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.precio-valor {
+    background-color: #e91e63;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.InfoProducto .row .container .content .estrellas{
+    color: var(--pink);
+    font-size: 1.5rem;
+}
+.InfoProducto .row .container .content .estrellas span{
+    color: gray;
+    font-size: 1.5rem;
+}

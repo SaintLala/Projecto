@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Verdana:wght@400;700&display=swap');
+:root {
+    --primary-color: #e84393;
+    --secondary-color: #333;
+    --highlight-color: #ffc107;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+body {
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+header {
+    width: 100%;
+    background: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .logo {
+    font-size: 3rem;
+    color: var(--secondary-color);
+    font-weight: bolder;
+}
+header .logo span {
+    color: var(--primary-color);
+}
+section.pago {
+    width: 100%;
+    max-width: 800px;
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    text-align: center;
+}
+.payment-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.payment-details, .qr-code-container {
+    flex: 1;
+}
+.payment-details .cip, .payment-details .amount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background: var(--highlight-color);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.payment-details h2 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+.payment-details p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+.qr-code {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.qr-code img {
+    width: 200px;
+    height: 200px;
+}
+.img-pagos-container {
+    display: flex;
+    justify-content: center;
+}
+.img-pagos {
+    width: auto;
+    height: 90px;
+}
+@media (max-width: 768px) {
+    .payment-info {
+        flex-direction: column;
+    }
+}

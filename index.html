@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+    <title>Pagina Web de Reposteria Delicias</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onclick="PlayAudio()">
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="#" class="logo">Delicias<span>.</span></a>
+        
+        <nav class="navbar">
+            <a href="#inicio">inicio</a>
+            <a href="#nosotros">nosotros</a>
+            <a href="#productos">productos</a>
+            <a href="#reseñas">reseñas</a>
+            <a href="#contactanos">contactanos</a>
+        </nav>
+
+        <div class="icons">            
+            <a href="libro.html" class="fa-solid fa-book"></a>
+            <a href="carrito.html" class="fas fa-shopping-cart">
+                <span id="cart-counter">0</span>
+            </a>
+            <a href="sesion.html" class="fas fa-user"></a>
+        </div>
+    </header>
+
+<section class="inicio" id="inicio">
+    <div class="content">
+        <h3>POSTRES</h3>
+        <span>Deliciosos & Creativos</span>
+        <p>Porque cada comida merece un final dulce y delicioso, descubre nuestra selección de postres que deleitarán tus sentidos.</p>
+        <a href="#productos" class="btn">Comprar Ahora</a>
+    </div>
+</section>
+
+<section class="nosotros" id="nosotros">
+
+    <h1 class="heading"><span> nosotros </span></h1>
+
+    <div class="row">
+
+        <div class="video-container">
+            <video src="images/vid-1.mp4" loop autoplay muted></video>
+            <h3>los mejores postres</h3>
+        </div>
+
+        <div class="content">
+            <h3>¿Por que elegirnos?</h3>
+            <p>Ofrecemos productos hechos a mano con ingredientes frescos y de alta calidad, como pasteles, tartas, galletas y cupcakes.</p>
+            <p>Nos destacamos por nuestra innovación constante, creando sabores únicos y estilos modernos. Además, brindamos experiencias personalizadas para satisfacer tus gustos y necesidades.</p>
+            <p>Nuestro compromiso con la satisfacción del cliente garantiza un servicio amable y profesional en cada interacción.</p>
+            <p>Elige Repostería Delicias S.A.C. para postres artesanales de calidad, diseñados para hacer de tus momentos especiales recuerdos inolvidables.</p>
+            <a href="infoweb.html" class="btn"> leer mas</a>
+        </div>
+    </div>
+</section>
+
+<section class="icons-container">
+
+    <div class="icons">
+        <img src="images/icon-1.jpg" alt="">
+        <div class="info">
+            <h3>delivery gratis</h3>
+            <span>todas las ordenes</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="images/icon-2.jpg" alt="">
+        <div class="info">
+            <h3>devoluciones</h3>
+            <span>garantía de devolución del dinero</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="images/icon-3.jpg" alt="">
+        <div class="info">
+            <h3>oferta y regalo </h3>
+            <span>en todos los pedidos</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="images/icon-4.jpg" alt="">
+        <div class="info">
+            <h3>pago seguro</h3>
+            <span>su seguridad es primero</span>
+        </div>
+    </div>
+
+</section>
+
+<section class="productos" id="productos">
+
+    <h1 class="heading"> lista de <span> productos</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <span class="descuento">-10%</span>
+            <div class="images">
+                <img src="images/img-1.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="cart-btn" data-name="leche asada" data-price="18.00">añadir al carrito</a>
+                    <a href="V-LecheAsada.html" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>leche asada</h3>
+                <div class="precio"> s/18.00 <span>s/20.00</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="descuento">-15%</span>
+            <div class="images">
+                <img src="images/img-2.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="cart-btn" data-name="brownies" data-price="17.00">añadir al carrito</a>
+                    <a href="V-Brownies.html" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>brownies</h3>
+                <div class="precio"> s/17.00 <span>s/20.00</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="descuento">-5%</span>
+            <div class="images">
+                <img src="images/img-3.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="cart-btn" data-name="cupcakes" data-price="9.50">añadir al carrito</a>
+                    <a href="V-Cupcakes.html" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>cupcake</h3>
+                <div class="precio"> s/9.50 <span>s/10.00</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="descuento">-20%</span>
+            <div class="images">
+                <img src="images/img-4.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="cart-btn" data-name="donas" data-price="12.00">añadir al carrito</a>
+                    <a href="V-Donas.html" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>donas</h3>
+                <div class="precio"> s/12.00 <span>s/15.00</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="descuento">-17%</span>
+            <div class="images">
+                <img src="images/img-5.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="cart-btn" data-name="galletas de mantequilla" data-price="9.96">añadir al carrito</a>
+                    <a href="V-GalletasMantequilla.html" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>galletas de mantequilla</h3>
+                <div class="precio"> s/9.96 <span>s/12.00</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="descuento">-3%</span>
+            <div class="images">
+                <img src="images/img-6.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="cart-btn" data-name="muffins" data-price="7.76">añadir al carrito</a>
+                    <a href="V-Muffins.html" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>muffins</h3>
+                <div class="precio"> s/7.76 <span>s/8.00</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="descuento">-18%</span>
+            <div class="images">
+                <img src="images/img-7.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="cart-btn" data-name="pastel de chocolate" data-price="20.50">añadir al carrito</a>
+                    <a href="V-PastelChocolate.html" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>pastel de chocolate</h3>
+                <div class="precio"> s/20.50 <span>s/25.00</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="descuento">-10%</span>
+            <div class="images">
+                <img src="images/img-8.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="cart-btn" data-name="pastel de frutas" data-price="16.20">añadir al carrito</a>
+                    <a href="V-PastelFrutas.html" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>pastel de frutas</h3>
+                <div class="precio"> s/16.20 <span>s/18.00</span></div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="reseñas" id="reseñas">
+
+<h1 class="heading"> opinion del <span> cliente </span> </h1>
+
+<div class="box-container">
+
+    <div class="box">
+        <div class="estrellas">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <p>Desde que descubrí Repostería Delicias S.A.C., no puedo dejar de recomendarla. Los pasteles y tartas son deliciosos, siempre frescos y con una presentación impecable. Para el cumpleaños de mi hija, les pedí un pastel personalizado, y el resultado superó mis expectativas. Además, el equipo fue muy amable y atento a mis requerimientos. Definitivamente, volveré a pedirles para futuros eventos.</p>
+        <div class="usuario">
+            <img src="images/pic-1.jpg" alt="">
+            <div class="info-usuario">
+                <h3>María Sánchez</h3>
+                <span>cliente feliz</span>
+            </div>
+        </div>
+        <span class="fas fa-quote-right"></span>
+    </div>
+
+    <div class="box">
+        <div class="estrellas">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <p>Hice un pedido grande de cupcakes para una fiesta de la oficina, y todos quedaron encantados. Los sabores eran sorprendentes y la decoración fue perfecta para la ocasión. Lo que más me gustó fue el trato personalizado y la rapidez con la que me atendieron. Sin duda, Repostería Delicias S.A.C. se ha ganado un cliente leal.</p>
+        <div class="usuario">
+            <img src="images/pic-2.jpg" alt="">
+            <div class="info-usuario">
+                <h3>Juan Pérez</h3>
+                <span>cliente feliz</span>
+            </div>
+        </div>
+        <span class="fas fa-quote-right"></span>
+    </div>
+
+    <div class="box">
+        <div class="estrellas">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <p>Siempre que tengo un evento especial, acudo a Repostería Delicias S.A.C. por su increíble calidad y servicio. Pedí un pastel para el aniversario de mis padres y fue todo un éxito. El equipo fue muy atento y se aseguró de que todo saliera como lo había planeado. La presentación y el sabor del pastel fueron impecables. Es genial encontrar un lugar donde realmente te escuchan y hacen lo posible por hacerte feliz con sus creaciones.</p>
+        <div class="usuario">
+            <img src="images/pic-3.jpg" alt="">
+            <div class="info-usuario">
+                <h3>Javier Rojas</h3>
+                <span>cliente feliz</span>
+            </div>
+        </div>
+        <span class="fas fa-quote-right"></span>
+    </div>
+
+</div>
+</section>
+
+<section class="contactanos" id="contactanos">
+    
+    <h1 class="heading"> <span> contacte con </span> nosotros</h1>
+
+    <div class="row">
+
+        <form action="https://formsubmit.co/reposteriadelicias01@gmail.com" method="post">
+            <input name="nombre" type="text" placeholder="nombre" id="name" class="box">
+            <input name="email" type="email" placeholder="email" id="email" class="box">
+            <input name="numero" type="number" placeholder="numero" id="number" class="box">
+            <textarea name="comentarios" class="box" placeholder="mensaje" id="coments" cols="30" rows="10"></textarea>
+            <input type="submit" value="enviar mensaje" class="btn">
+        </form>
+
+        <div class="images">
+            <img src="images/contact-img.jpg" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="musica">
+            <audio id="audio1" loop>
+                <source src="musica/Musica Pasteleria.mp3" type="audio/mpeg">
+                Este navegador no acepta formatos de audio
+             </audio>
+        </div>
+        
+        <div class="box">
+            <h3>enlaces rapidos</h3>
+            <a href="#">inicio</a>
+            <a href="#">nosotros</a>
+            <a href="#">productos</a>
+            <a href="#">reseñas</a>
+            <a href="#">contactanos</a>
+        </div>
+
+        <div class="box">
+            <h3>redes sociales</h3>
+            <a href="https://www.instagram.com/lasdeliciaspasteleriaperu/" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/lasdeliciaspasteleriaperu?locale=es_LA" target="_blank">Facebook</a>
+        </div>
+
+        <div class="box">
+            <h3>ubícanos</h3>
+            <a href="https://maps.app.goo.gl/SSnwDT8Hi62DXR867" target="_blank">Av. César Canevaro 347, San Juan de Miraflores 15824</a>
+            <a href="https://maps.app.goo.gl/Z1f7ubfTF2q2xajh7" target="_blank">Av. Juan Velasco Alvarado, Villa EL Salvador 15831</a>
+            <a href="https://maps.app.goo.gl/N2HL3yMMFzjjZ3YM8" target="_blank">Av. Defensores del Morro 580, Lima 15064</a>
+            <a href="https://maps.app.goo.gl/go7VRgYWkTxqxn6t9" target="_blank">Tolomeo 190, Lima 15057</a>
+        </div>
+        
+
+        <div class="box">
+            <h3>contactos</h3>
+            <a href="#">972 113 681</a>
+            <a href="#">reposteriadelicias01@gmail.com</a>
+            <a href="#">lunes a viernes de 8:00 am a 6:00pm</a>
+            <img src="images/pago-1.jpg" alt="">
+        </div>
+
+    </div>
+
+    <div class="creditos"> © 2024 <span> Repostería Delicias S.A.C. </span> | Todos los derechos reservados</div>
+
+</section>
+<script src="//code.tidio.co/eudapcorm9u9boru86z3fz5ynbjtx90p.js" async></script>
+<script src="js/musica.js"></script>
+<script src="js/form-validation.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>
